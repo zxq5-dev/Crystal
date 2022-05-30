@@ -1,0 +1,274 @@
+{
+    "intents": [
+        {
+            "tag": "hello",
+            "patterns": ["hi", "hey", "sup", "yo", "yoo", "heyy", "heya", "sup"],
+            "responses": ["hi", "hey", "sup", "yo", "yoo", "heyy", "heya", "sup"]
+        },
+        {
+            "tag": "bye",
+            "patterns": ["bye", "cya", "byee", "goodbye", "so long"],
+            "responses": ["cya", "bye", "byee", "goodbye", "so long"]
+        },
+        {
+            "tag": "complement",
+            "patterns": ["youre nice", "youre cute", "youre funny", "i like you", "youre cool"],
+            "responses": ["aww thanks", "<3", ":heart:"]
+        },
+        {
+            "tag": "simp", 
+            "patterns": ["can we edate", "will you go out with me", "can you slide into my dms"], 
+            "responses": ["ew no", "not in a million years", "in your dreams simp", "wth no", "haha simp"]
+        },
+        {
+            "tag": "how are you",
+            "patterns": ["how are you", "how you doing", "hru", "whats vibin", "whats poppin", "wassup", "whats up"],
+            "responses": ["im good, hbu?", "ok, how are you", "alright, wbu?", "im doing ok, how are you doing?"]
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        {
+            "tag": "deez",
+            "patterns": ["do you know dee", "do you know deez", "have you heard of deez", "do you know what dee is", "who is dee"],
+            "responses": [
+                "Deez nuts\n haha nice try", 
+                "Deez nuts?\n its 2022 XD", 
+                "Deez nuts?\n im not falling for that lol", 
+                "Deez nuts\n aww youre trying to trick me", 
+                "Nope, not falling for that", 
+                "Deez nuts?\n not today.", 
+                "You thought you could get me lmao", 
+                "Deez nuts, good one!", 
+                "I respect you for trying :)", 
+                "I saw that coming a mile away!", 
+                "Deez nuts? really? come on thats not cool!", 
+                "Really. Deez nuts. Not funny.", 
+                "I would expect better from you lol",
+                "Heard it before", 
+                "Not falling for that again", 
+                "Smh deez nuts I assume?", 
+                "Get some new jokes lol", 
+                "Deez nuts? Try again. Jk, please dont try again.", 
+                "Deez nuts... Thats kind of old"
+            ]
+        },
+        {
+            "tag": "ligma",
+            "patterns": ["ligma"],
+            "responses": ["ligma balls? no way.", "thats not funny."]
+        },
+        {
+            "tag": "howard",
+            "patterns": ["do you know howard", "is howard", "have you heard from howard"],
+            "responses": [
+                "Howardeez nuts\n haha nice try", 
+                "Howardeez nuts?\n its 2022 XD", 
+                "Deez nuts?\n im not falling for that lol", 
+                "Deez nuts\n aww youre trying to trick me", 
+                "Nope, not falling for that", 
+                "Deez nuts?\n not today.", 
+                "You thought you could get me lmao", 
+                "Deez nuts, good one!", 
+                "I respect you for trying :)", 
+                "I saw that coming a mile away!", 
+                "Deez nuts? really? come on thats not cool!", 
+                "Really. Deez nuts. Not funny.", 
+                "I would expect better from you lol",
+                "Heard it before", 
+                "Not falling for that again", 
+                "Smh deez nuts I assume?", 
+                "Get some new jokes lol", 
+                "Deez nuts? Try again. Jk, please dont try again.", 
+                "Deez nuts... Thats kind of old"
+            ]
+        },
+        {
+            "tag": "kenya",
+            "patterns": ["what happened in kenya", "is kenya", "country nairobi capital"],
+            "responses": [
+                "Kenya fit deez nuts?\n haha nice try", 
+                "Deez nuts?\n its 2022 XD", 
+                "Deez nuts?\n im not falling for that lol", 
+                "Deez nuts\n aww youre trying to trick me", 
+                "Nope, not falling for that", 
+                "Deez nuts?\n not today.", 
+                "You thought you could get me lmao", 
+                "Deez nuts, good one!", 
+                "I respect you for trying :)", 
+                "I saw that coming a mile away!", 
+                "Deez nuts? really? come on thats not cool!", 
+                "Really. Deez nuts. Not funny.", 
+                "I would expect better from you lol",
+                "Heard it before", 
+                "Not falling for that again", 
+                "Smh deez nuts I assume?", 
+                "Get some new jokes lol", 
+                "Kenya fit deez nuts? Try again. Jk, please dont try again.", 
+                "Deez nuts... Thats kind of old"
+            ]
+        },
+        {
+            "tag": "imagine dragons",
+            "patterns": ["imagine dragons"],
+            "responses": [
+                "great band, bad joke, nice try :)",                
+                "Deez nuts\n haha nice try", 
+                "Deez nuts?\n its 2022 XD", 
+                "Deez nuts?\n im not falling for that lol", 
+                "Deez nuts\n aww youre trying to trick me", 
+                "Nope, not falling for that", 
+                "Deez nuts?\n not today.", 
+                "You thought you could get me lmao", 
+                "Deez nuts, good one!", 
+                "I respect you for trying :)", 
+                "I saw that coming a mile away!", 
+                "Deez nuts? really? come on thats not cool!", 
+                "Really. Deez nuts. Not funny.", 
+                "I would expect better from you lol",
+                "Heard it before, the joke and the music :)", 
+                "Not falling for that again", 
+                "Smh deez nuts I assume?", 
+                "Get some new jokes lol", 
+                "Deez nuts? Try again. Jk, please dont try again.", 
+                "Deez nuts... Thats kind of old",
+                "How could you give imagine dragons a bad name with your deez nuts jokes?"
+            ]
+        },
+        {
+            "tag": "wendy",
+            "patterns": [],
+            "responses": [
+                "Wendeez nuts\n haha nice try", 
+                "Deez nuts?\n its 2022 XD", 
+                "Wendy's nuts?\n im not falling for that lol", 
+                "Deez nuts\n aww youre trying to trick me", 
+                "Nope, not falling for that", 
+                "When deez nuts?\n not today.", 
+                "You thought you could get me lmao", 
+                "Deez nuts, good one!", 
+                "I respect you for trying :)", 
+                "I saw that coming a mile away!", 
+                "Deez nuts? really? come on thats not cool!", 
+                "Really. Deez nuts. Not funny.", 
+                "I would expect better from you lol",
+                "Heard it before", 
+                "Not falling for that again", 
+                "Smh deez nuts I assume?", 
+                "Get some new jokes lol", 
+                "When deez nuts? Try again. Jk, please dont try again.", 
+                "Deez nuts... Thats kind of old"
+            ]
+        },
+        {
+            "tag": "candice / candy",
+            "patterns": ["is candice", "heard candice", "know candice", "seen candice", "know candy", "seen candy", "is candy", "americans call sweets"],
+            "responses": [
+                "Can deez nuts.\n haha nice try", 
+                "Deez nuts?\n its 2022 XD", 
+                "Deez nuts?\n im not falling for that lol", 
+                "Deez nuts\n aww youre trying to trick me", 
+                "Nope, not falling for that", 
+                "Deez nuts?\n not today.", 
+                "You thought you could get me lmao", 
+                "Deez nuts, good one!", 
+                "I respect you for trying :)", 
+                "I saw that coming a mile away!", 
+                "Deez nuts? really? come on thats not cool!", 
+                "Really. Deez nuts. Not funny.", 
+                "I would expect better from you lol",
+                "Heard it before", 
+                "Not falling for that again", 
+                "Smh deez nuts I assume?", 
+                "Get some new jokes lol", 
+                "Deez nuts? Try again. Jk, please dont try again.", 
+                "Candeez nuts... Thats kind of old",
+                "Can deez nuts? I dont think so."
+            ]
+        },
+        {
+            "tag": "bofa",
+            "patterns": ["is bofa", "know bofa", "heard from bofa"],
+            "responses": [             
+                "Bofa deez nuts\n haha nice try", 
+                "Deez nuts?\n its 2022 XD", 
+                "Deez nuts?\n im not falling for that lol", 
+                "Bofa deez nuts\n aww youre trying to trick me", 
+                "Nope, not falling for that", 
+                "Bofa deez nuts?\n not today.", 
+                "You thought you could get me lmao", 
+                "Deez nuts, good one!", 
+                "I respect you for trying :)", 
+                "I saw that coming a mile away!", 
+                "Deez nuts? really? come on thats not cool!", 
+                "Really. Bofa deez nuts? Not funny.", 
+                "I would expect better from you lol",
+                "Heard it before, the joke and the music :)", 
+                "Not falling for that again", 
+                "Smh bofa deez nuts I assume?", 
+                "Get some new jokes lol", 
+                "Deez nuts? Try again. Jk, please dont try again.", 
+                "Deez nuts... Thats kind of old"
+            ]
+        },
+        {
+            "tag": "joe mama",
+            "patterns": ["joe", "joseph", "jo"],
+            "responses": [
+                "joe mama, haha",
+                "i hope this isnt joe mama",
+                "please dont say joe mama, that would be cringe",
+                "i know what you are about to say dont I?",
+                "when did i ask about Joe mama?"
+            ]
+        }
+    ]
+}

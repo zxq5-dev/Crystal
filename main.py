@@ -45,13 +45,6 @@ def get_time():
 
 
 
-
-
-
-
-
-
-
 @client.command()
 async def profile(message, member: discord.Member, description="Displays the profile of the specified user."):
     embed = discord.Embed(title = member.name, description = member.mention, color = discord.Color.purple())
@@ -173,7 +166,7 @@ async def rules(message):
     embed.add_field(name = "6:", value = "please send messages in the correct channels; keep things relevant", inline = True)
     embed.add_field(name = "7:", value = "please dont ping the owners / admins unless it is important, it gets annoying", inline = True)
 
-    await message.send(embed=embed)
+    await message.send(embed = embed)
 
 
 @client.command()
@@ -193,11 +186,31 @@ async def calc(ctx, *, args):
     channel = ctx.message.channel
     await channel.send(f"the answer to {eq} is {calculate(equation)}")
 
+@client.command()
+async def docs(message):
+    await message.send("you can find my documentation here:")
+    embed = discord.Embed(title = "https://fantasypvp.github.io/CrystalDocs")
+    await message.send(embed = embed)
+
+@client.command()
+async def rickrollvc(message):
+    vc = discord.utils.get(message.guild.voice_channels, name = "General")
+    voice = discord.utils.get(client.voice_clients, guild = message.guild)
+    await vc.connect()
+
+@client.command()
+async def dc(message):
+    voice = discord.utils.get(client.voice_clients, guild = message.guild)
+    if voice.is_connected():
+        await voice.disconnect()
+    else:
+        await message.send(random.choice["uhm im not in a vc", "im not connected to a voice channel"])
+
 
 
 @client.event
 async def on_ready():
-        await client.change_presence(status = discord.Status.idle, activity = discord.Game("FantasyAnarchy Season 0: modded terrain, high performance host, factions, muffins and anarchy"))
+        await client.change_presence(status = discord.Status.idle, activity = discord.Game("Im back with a better AI than ever thanks to neural networks!"))
 
 
 @client.event

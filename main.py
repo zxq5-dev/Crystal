@@ -18,8 +18,8 @@ chatbot.save_model()
 client = commands.Bot(command_prefix = "$ ")
 
 load_dotenv()
-token = os.getenv("token")
-
+token = environ["token"]
+print(token)
 
 
 

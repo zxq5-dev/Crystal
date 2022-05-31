@@ -22,7 +22,9 @@
               "you are cool",
               "you are nice",
               "you are the best",
-              "youre the best"
+              "youre the best",
+              "youre a legend",
+              "you r amazing"
             ],
             "responses": ["aww thanks", "<3", ":heart:", ":)"]
         },
@@ -57,50 +59,6 @@
             ],
             "responses": ["youre so mean :(", "leave me alone", "what's wrong with you", ":broken_heart:"]
         },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         {
             "tag": "deez",
             "patterns": ["do you know dee", "do you know deez", "have you heard of deez", "do you know what dee is", "who is dee"],

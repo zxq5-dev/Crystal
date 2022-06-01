@@ -2,8 +2,8 @@
     "intents": [
         {
             "tag": "hello",
-            "patterns": ["hi", "hey", "sup", "yo", "yoo", "heyy", "heya", "sup"],
-            "responses": ["hi", "hey", "sup", "yo", "yoo", "heyy", "heya", "sup"]
+            "patterns": ["hi", "hey", "sup", "yo", "yoo", "heyy", "heya", "sup", "hello"],
+            "responses": ["hi", "hey", "sup", "yo", "yoo", "heyy", "heya", "sup", "hello"]
         },
         {
             "tag": "bye",
@@ -42,6 +42,11 @@
             "tag": "rules",
             "patterns": ["what are the rules", "are there rules", "tell me rules"],
             "responses": ["check out #rules", "you know the rules... and so do I XD"]
+        },
+        {
+            "tag": "time",
+            "patterns": ["what time is it", "whats the time", "guess what time it is"],
+            "reponses": ["Its Muffin time!", "muffin time?"]
         },
         {
             "tag": "you suck",

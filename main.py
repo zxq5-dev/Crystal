@@ -193,10 +193,12 @@ async def docs(message):
     await message.send(embed = embed)
 
 @client.command()
-async def rickrollvc(message):
-    vc = discord.utils.get(message.guild.voice_channels, name = "General")
-    voice = discord.utils.get(client.voice_clients, guild = message.guild)
-    await vc.connect()
+async def rickrollvc(ctx):
+    if ctx.author.voice:
+        channel = ctx.author.voice.channel
+        voice = await channel.connect()
+        source = discord.FFmpegPCMAudio("rickroll.mp3")
+        player = voice.play(source)
 
 @client.command()
 async def dc(message):

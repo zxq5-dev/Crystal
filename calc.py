@@ -11,7 +11,7 @@ def calculate(equation):
     total_length = len(equation)
 
     # moving each character of the equation to a separate variable in a list (instruction_list_unprocessed)
-
+#
     for i in range(total_length):
         instruction_list_unprocessed.append(equation[i])
 

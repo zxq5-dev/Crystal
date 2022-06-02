@@ -46,7 +46,7 @@
         {
             "tag": "time",
             "patterns": ["what time is it", "whats the time", "guess what time it is"],
-            "reponses": ["Its Muffin time!", "muffin time?"]
+            "responses": ["Its Muffin time!", "muffin time?"]
         },
         {
             "tag": "you suck",

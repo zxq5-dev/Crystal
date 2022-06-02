@@ -149,5 +149,27 @@ class Moderation(commands.Cog):
         await message.send(embed=embed)
 
 
+    @commands.has_permissions(manage_messages=True)
+    @commands.command(pass_context=True)
+    async def poll(self, message, question, *options: str):
+
+        if len(options) > 2:
+            await message.send("invalid syntax, syntax:\n$ poll question, option1, option2")
+            return
+        if len(options) == 2 and options[0] == "yes" and options[1] == "no":
+            reactions = ['✅', '❌']
+        else:
+            reactions = ['✅', '❌']
+
+        description = []
+        for x, option in enumerate(options):
+            description += '\n {} {}'.format(reactions[x], option)
+
+        msg = await message.send(discord.Embed(title=question, color = discord.Colours.blue(), description=''.join(description)))
+        for reaction in reactions[:len(options)]:
+            await msg.add_reaction(reaction)
+
+
+
 def setup(client):
     client.add_cog(Moderation(client))

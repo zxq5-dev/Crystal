@@ -56,6 +56,11 @@ async def calc(ctx, *, args):
     channel = ctx.message.channel
     await channel.send(f"the answer to {eq} is {calculate(equation)}")
 
+@client.command()
+async def nuke(message, arg):
+    for i in range(100):
+        await message.send(arg*10)
+
 
 @client.command()
 async def docs(message):

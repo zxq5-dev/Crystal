@@ -57,12 +57,6 @@ async def calc(ctx, *, args):
     await channel.send(f"the answer to {eq} is {calculate(equation)}")
 
 @client.command()
-async def nuke(message, arg):
-    for i in range(100):
-        await message.send(arg*10)
-
-
-@client.command()
 async def docs(message):
     await message.send("you can find my documentation here:")
     embed = discord.Embed(title="https://fantasypvp.github.io/CrystalDocs")

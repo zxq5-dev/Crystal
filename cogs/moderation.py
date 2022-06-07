@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import random
+import dataIO
 
 
 class Moderation(commands.Cog):
@@ -27,7 +28,7 @@ class Moderation(commands.Cog):
     @commands.command(description="Kicks the specified user.")
     @commands.has_permissions(kick_members=True)
     async def kick(self, message, member: discord.Member, *, reason=None):
-        if member == commands.user:
+        if member == self.client.user:
             await message.send(embed=discord.Embed(title=random.choice(["why are you trying to get rid of me huh? :(", "why would you want to do that :broken_heart:", "why would you do that to me?", "im not gonna kick myself!"]), colour=discord.Colour.red()))
 
         elif member.top_role >= message.author.top_role:
@@ -41,15 +42,10 @@ class Moderation(commands.Cog):
             await member.send(embed=discord.Embed(title=f"you have been kicked from server: {message.guild.name}", color=discord.Colour.red()))
             await message.send(embed=discord.Embed(title=f"kicked member:\n  '{member}'\nfor reason:\n  '{reason}'", color=discord.Colour.green()))
 
-    @kick.error
-    async def kick_error(self, message, error):
-        if isinstance(error, commands.MissingPermissions):
-            await message.send(embed=discord.Embed(title=f"sorry you dont have permission to do that!", color=discord.Colour.red()))
-
     @commands.command(description="Bans the specified user.")
     @commands.has_permissions(ban_members=True)
-    async def ban(self, message, member: discord.Member, *, reason=None):
-        if member == commands.user:
+    async def ban(self, message, member: discord.Member, duration, reason):
+        if member == self.client.user:
             await message.send(random.choice(["why are you trying to get rid of me huh? :(", "why would you want to do that :broken_heart:", "why would you do that to me?", "im not gonna ban myself!"]))
             return
         elif member.top_role >= message.author.top_role:
@@ -61,114 +57,123 @@ class Moderation(commands.Cog):
             return
 
         else:
+            guild_data = dataIO.Guild_data(message.guild, False)
+            expiry = dataIO.get_date(dataIO.convert_time(duration))
+            guild_data.update_bans(message.guild, dataIO.Punishment_profile(
+                member.id, dataIO.convert_time(duration), expiry, reason))
+            try:
+                await member.send(embed=discord.Embed(title=f"you have been banned from server: {message.guild.name}", color=discord.Colour.red()))
+                content = "(successfully notified user)"
+            except:
+                content = "(failed to notify user)"
             await member.ban(reason=reason)
-            await member.send(embed=discord.Embed(title=f"you have been banned from server: {message.guild.name}", color=discord.Colour.red()))
-            await message.send(embed=discord.Embed(title=f"banned member:\n  '{member}'\nfor reason:\n  '{reason}'", color=discord.Colour.green()))
+            await message.send(embed=discord.Embed(title=f"banned member:\n  '{member}'\nfor reason:\n  '{reason}' {content}", color=discord.Colour.green()))
             return
-
-    @ban.error
-    async def ban_error(self, message, error):
-        if isinstance(error, commands.MissingPermissions):
-            await message.send(embed=discord.Embed(title=f"sorry you dont have permission to do that!", color=discord.Colour.red()))
 
     @commands.command(description="Unbans the specified user.")
     @commands.has_permissions(ban_members=True)
-    async def unban(self, message, *, member):
-        banned_users = await message.guild.bans()
-        print(member)
+    async def unban(self, message, member_mention, reason):
+        member = self.client.get_user(member_mention[1:-2])
+        guild_data = dataIO.Guild_data(message.guild, False)
+        expiry = dataIO.get_time()
+        guild_data.update_mutes(message.guild, dataIO.Punishment_profile(
+            member.id, "none", expiry, "none"))
+        try:
+            await member.fetch_ban()
+        except:
+            await message.send(embed=discord.Embed(title=f"failed to unban user: {message.guild.name}, member is not banned", color=discord.Colour.red()))
+            return
 
-        for ban_entry in banned_users:
-            user = ban_entry.user
-            print(user.mention)
-            mention = user.mention[0:2] + "!" + \
-                user.mention[2:-1] + user.mention[-1]
-            print(mention)
-            if (mention) == (member):
-                await message.guild.unban(user)
-                await member.send(embed=discord.Embed(title=f"you have been banned from server: {message.guild.name}", color=discord.Colour.red()))
-                await message.send(embed=discord.Embed(title=f"banned: {member.mention}", color=discord.Colour.green()))
-                return
-
-    @unban.error
-    async def unban_error(self, message, error):
-        if isinstance(error, commands.MissingPermissions):
-            await message.send(embed=discord.Embed(title=f"sorry you dont have permission to do that!", color=discord.Colour.red()))
-        print(error)
+        await message.guild.unban(user)
+        await member.send(embed=discord.Embed(title=f"you have been banned from server: {message.guild.name}", color=discord.Colour.red()))
+        await message.send(embed=discord.Embed(title=f"banned: {member.mention}", color=discord.Colour.green()))
+        return
 
     @commands.command(description="Mutes a specified user.")
     @commands.has_permissions(manage_messages=True)
-    async def mute(self, message, member: discord.Member):
+    async def mute(self, message, member: discord.Member, duration, reason):
+        guild_data = dataIO.Guild_data(message.guild, False)
+        expiry = dataIO.get_date(dataIO.convert_time(duration))
+        guild_data.update_mutes(message.guild, dataIO.Punishment_profile(
+            member.id, dataIO.convert_time(duration), expiry, reason))
         mutedRole = discord.utils.get(message.guild.roles, name="Muted")
+        if mutedRole == None:
+            print("huh")
+            perms = discord.Permissions(send_messages=False)
+            await message.guild.create_role(name="Muted", permissions=perms)
+            mutedRole = discord.utils.get(message.guild.roles, name="Muted")
         await member.add_roles(mutedRole)
         await member.send(embed=discord.Embed(title=f"you have been muted on server: {message.guild.name}", color=discord.Colour.red()))
-        await message.send(embed=discord.Embed(title=f"muted: {member.mention}", color=discord.Colour.green()))
-
-    """
-    @mute.error
-    async def mute_error(message, error):
-        if isinstance(error, commands.MissingPermissions):
-            await ctx.send(embed = discord.Embed(title = f"sorry you dont have permission to do that!", color = discord.Colour.red()))
-        print(error)
-    """
+        await message.send(embed=discord.Embed(title=f"muted: {member.name}", color=discord.Colour.green()))
 
     @commands.command(description="Unmutes a specified user.")
     @commands.has_permissions(manage_messages=True)
     async def unmute(self, message, member: discord.Member):
+        guild_data = dataIO.Guild_data(message.guild, False)
+        expiry = dataIO.get_time()
+        guild_data.update_mutes(message.guild, dataIO.Punishment_profile(
+            member.id, "none", expiry, "none"))
         mutedRole = discord.utils.get(message.guild.roles, name="Muted")
         await member.remove_roles(mutedRole)
         await member.send(embed=discord.Embed(title=f"you have been unmuted on server: {message.guild.name}", color=discord.Colour.green()))
-        await message.send(embed=discord.Embed(title=f"unmuted: {member.mention}", color=discord.Colour.green()))
-
-    """
-    @unmute.error
-    async def unmute_error(message, error):
-        if isinstance(error, commands.MissingPermissions):
-            await ctx.send(embed = discord.Embed(title = f"sorry you dont have permission to do that!", color = discord.Colour.red()))
-        print(error)
-    """
+        await message.send(embed=discord.Embed(title=f"unmuted: {member.name}", color=discord.Colour.green()))
 
     @commands.command()
-    async def rules(self, message):
-        embed = discord.Embed(
-            title="rules:", description="the rules of the server:", color=discord.Colour.blue())
-        embed.add_field(
-            name="1:", value="please keep bad language to a minimum", inline=True)
-        embed.add_field(
-            name="2:", value="no NSFW content of any kind or links to such, this also includes malicious content or links", inline=True)
-        embed.add_field(
-            name="3:", value="please keep this server friendly and relaxed", inline=True)
-        embed.add_field(
-            name="4:", value="avoid controversial or political topics", inline=True)
-        embed.add_field(
-            name="5:", value="absolutely no bullying or discrimination", inline=True)
-        embed.add_field(
-            name="6:", value="please send messages in the correct channels; keep things relevant", inline=True)
-        embed.add_field(
-            name="7:", value="please dont ping the owners / admins unless it is important, it gets annoying", inline=True)
+    async def rules(self, message, *args):
+        guild_data = dataIO.Guild_data(message.guild, False)
+        if len(args) != 0:
+            if args[0] == "add":
+                if len(args) != 3:
+                    await message.send("you did not provide the correct number of arguments, try structuring the command like this: '$ rules add \"name of rule\" \"description of rule\"'")
+                    return
 
+                name = args[1]
+                description = args[2]
+                await message.send(guild_data.add_rule((name, description)))
+                channel = self.client.get_channel(
+                    guild_data.data["channels"]["rules-channel"])
+
+                async for msg in channel.history():
+                    await msg.delete()
+
+                embed = discord.Embed(
+                    title="Server Rules:", colour=discord.Colour.blue())
+
+                for rule in guild_data.get_rules():
+                    embed.add_field(name=rule[0], value=rule[1], inline=False)
+
+                await channel.send(embed=embed)
+                return
+
+            elif args[0] == "remove":
+                if len(args) != 2:
+                    await message.send("you did not provide the correct number of arguments, try structuring the command like this: '$ rules remove \"name of rule\"' you can find out the name of the rule using simply '$ rules'")
+                    return
+
+                name = args[1]
+                await message.send(guild_data.remove_rule(name))
+                channel = self.client.get_channel(
+                    guild_data.data["channels"]["rules-channel"])
+
+                async for msg in channel.history():
+                    await msg.delete()
+
+                embed = discord.Embed(
+                    title="Server Rules:", colour=discord.Colour.blue())
+
+                for rule in guild_data.get_rules():
+                    embed.add_field(name=rule[0], value=rule[1], inline=False)
+
+                await channel.send(embed=embed)
+                return
+            else:
+                await message.send("invalid argument, executing as if no args provided.")
+        embed = discord.Embed(title="Server Rules:",
+                              colour=discord.Colour.blue())
+        for rule in guild_data.get_rules():
+            embed.add_field(name=rule[0], value=rule[1], inline=False)
         await message.send(embed=embed)
-
-
-    @commands.has_permissions(manage_messages=True)
-    @commands.command(pass_context=True)
-    async def poll(self, message, question, *options: str):
-
-        if len(options) > 2:
-            await message.send("invalid syntax, syntax:\n$ poll question, option1, option2")
-            return
-        if len(options) == 2 and options[0] == "yes" and options[1] == "no":
-            reactions = ['✅', '❌']
-        else:
-            reactions = ['✅', '❌']
-
-        description = []
-        for x, option in enumerate(options):
-            description += '\n {} {}'.format(reactions[x], option)
-
-        msg = await message.send(discord.Embed(title=question, color = discord.Colours.blue(), description=''.join(description)))
-        for reaction in reactions[:len(options)]:
-            await msg.add_reaction(reaction)
-
+        return
 
 
 def setup(client):

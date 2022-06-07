@@ -1,0 +1,368 @@
+{
+    "ban-list": {
+        "155149108183695360": {
+            "expiry-date": "2091-06-05-19-27-58",
+            "initial-duration": "69-00-00-00-00-00",
+            "reason": "Moderate deez nuts bozo"
+        }
+    },
+    "channels": {
+        "changelogs-channel": 983073178303725588,
+        "logs-channel": 983073182170906634,
+        "rules-channel": 983073180308635648,
+        "sys-channel": 983073175602626673
+    },
+    "header": {
+        "server-id": "803325282777694289",
+        "server-name": "Tayles\u2019 the Trainspotter\u2019s Fan Club",
+        "server-owner": "803324389662654484"
+    },
+    "members": {
+        "<@!155149108183695360>": {
+            "id": "155149108183695360",
+            "known-name": "Dyno",
+            "level": "1",
+            "mention": "<@!155149108183695360>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@!364066605409239044>": {
+            "id": "364066605409239044",
+            "known-name": "TheOfficialJonBroFTW",
+            "level": "1",
+            "mention": "<@!364066605409239044>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@!771822887421345812>": {
+            "id": "771822887421345812",
+            "known-name": "Fantasy_PvP",
+            "level": "1",
+            "mention": "<@!771822887421345812>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@!803324389662654484>": {
+            "id": "803324389662654484",
+            "known-name": "Tayles The Trainspotter",
+            "level": "1",
+            "mention": "<@!803324389662654484>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@!808081011296567317>": {
+            "id": "808081011296567317",
+            "known-name": "Williammul123",
+            "level": "1",
+            "mention": "<@!808081011296567317>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@!837722637291487274>": {
+            "id": "837722637291487274",
+            "known-name": "Panic_Attack",
+            "level": "1",
+            "mention": "<@!837722637291487274>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@!924809361400934432>": {
+            "id": "924809361400934432",
+            "known-name": "TaylesFanBot",
+            "level": "1",
+            "mention": "<@!924809361400934432>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@!925737933259046922>": {
+            "id": "925737933259046922",
+            "known-name": "Mikethecarweeb-_-",
+            "level": "1",
+            "mention": "<@!925737933259046922>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@!927601018835980348>": {
+            "id": "927601018835980348",
+            "known-name": "OtrementalFlameS",
+            "level": "1",
+            "mention": "<@!927601018835980348>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@235148962103951360>": {
+            "id": "235148962103951360",
+            "known-name": "Carl-bot",
+            "level": "1",
+            "mention": "<@235148962103951360>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@372639998530420736>": {
+            "id": "372639998530420736",
+            "known-name": "Morgana",
+            "level": "1",
+            "mention": "<@372639998530420736>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@550613223733329920>": {
+            "id": "550613223733329920",
+            "known-name": "Reaction Roles",
+            "level": "1",
+            "mention": "<@550613223733329920>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@710078095885074493>": {
+            "id": "710078095885074493",
+            "known-name": "Tari",
+            "level": "1",
+            "mention": "<@710078095885074493>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@713586207119900693>": {
+            "id": "713586207119900693",
+            "known-name": "QOTD Bot",
+            "level": "1",
+            "mention": "<@713586207119900693>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@719198931925336136>": {
+            "id": "719198931925336136",
+            "known-name": "no u electric boogaloo",
+            "level": "1",
+            "mention": "<@719198931925336136>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@759089406841061387>": {
+            "id": "759089406841061387",
+            "known-name": "Theosawesome",
+            "level": "1",
+            "mention": "<@759089406841061387>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@781252365398573116>": {
+            "id": "781252365398573116",
+            "known-name": "tallscheduler",
+            "level": "1",
+            "mention": "<@781252365398573116>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@813545518352695297>": {
+            "id": "813545518352695297",
+            "known-name": "Henry The F1 Guy",
+            "level": "1",
+            "mention": "<@813545518352695297>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@818149391436087367>": {
+            "id": "818149391436087367",
+            "known-name": "wm123",
+            "level": "1",
+            "mention": "<@818149391436087367>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@832532299203084308>": {
+            "id": "832532299203084308",
+            "known-name": "the lego kid",
+            "level": "1",
+            "mention": "<@832532299203084308>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@839169196507922452>": {
+            "id": "839169196507922452",
+            "known-name": "Meggy",
+            "level": "1",
+            "mention": "<@839169196507922452>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@848571930466582639>": {
+            "id": "848571930466582639",
+            "known-name": "Ollie",
+            "level": "1",
+            "mention": "<@848571930466582639>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@875292952212172822>": {
+            "id": "875292952212172822",
+            "known-name": "AlfBug08",
+            "level": "1",
+            "mention": "<@875292952212172822>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@892161263247982653>": {
+            "id": "892161263247982653",
+            "known-name": "Crystal",
+            "level": "1",
+            "mention": "<@892161263247982653>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@940020484697911307>": {
+            "id": "940020484697911307",
+            "known-name": "JulesPourPresident",
+            "level": "1",
+            "mention": "<@940020484697911307>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@957256273554968626>": {
+            "id": "957256273554968626",
+            "known-name": "Train TNT",
+            "level": "1",
+            "mention": "<@957256273554968626>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@979510873343287338>": {
+            "id": "979510873343287338",
+            "known-name": "CrystalXD\u2122",
+            "level": "1",
+            "mention": "<@979510873343287338>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        }
+    },
+    "mute-list": {},
+    "server-prefixes": {
+        "chatbot": ". ",
+        "moderation": "$ ",
+        "normal": "? "
+    },
+    "server-rules": {
+        "1.": "The most important rule is to be respectful to anyone and everyone - treat others how you'd like to be treated yourself.",
+        "2a.": "Try to avoid political or religious topics, as they might be controversial and may offend some members.",
+        "2b.": "Please avoid talking about subjects that are sensitive to people (i.e. Holocaust/Ukrainian Invasion)",
+        "3.": "Provoking, insulting, bullying or personally attacking anyone, will not be tolerated. This includes derogatory terms regarding religion, race/ethnicity, sex/gender, sexual orientation or any other discriminating factor.",
+        "4a.": "Absolutely no NSFW content is allowed in any channel or voice chat.",
+        "4b.": "Swearing is not to be used in a derogatory manner (to attack individuals or groups) under any circumstances.",
+        "4c.": "Swearing is not to be used in a derogatory manner (to attack individuals or groups) under any circumstances.",
+        "5a.": "Spam and Discord invite links are not allowed. Most of this will be picked up by an HR.",
+        "5b.": "Excessive use of ALL CAPS or bold text or BOTH will be treated as spam. Cold tagging and harassing users with mentions will be treated as spam. Sending the same message multiple times in a short period, disrupting conversation, will also be treated as spam.",
+        "5c.": "If you have an issue and need to contact a Supervisor, please use <@&938191368449327175>",
+        "6a.": "Advertising is generally frowned upon. You can talk about your own personal life in general, and you can suggest tools and websites that users may like, but you should be very clear if you own the asset or receive benefit by sharing it.",
+        "6b.": "Please don\u2019t DM people with advertisements unless they have agreed in advance in the regular channels.",
+        "7.": "Please use the channels as they are intended to be used. A Supervisor may ask you to move channel if you go off-topic, please do as they ask."
+    },
+    "server-suggestions": {}
+}

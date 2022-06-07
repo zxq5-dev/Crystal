@@ -1,0 +1,126 @@
+{
+    "ban-list": {},
+    "channels": {
+        "changelogs-channel": 983293598407737354,
+        "logs-channel": 983293601746391090,
+        "rules-channel": 983293600009969705,
+        "sys-channel": 983293594058231838
+    },
+    "header": {
+        "server-id": "953025959731277864",
+        "server-name": "Coding Club",
+        "server-owner": "771822887421345812"
+    },
+    "members": {
+        "<@!771822887421345812>": {
+            "id": "771822887421345812",
+            "known-name": "Fantasy_PvP",
+            "level": "1",
+            "mention": "<@!771822887421345812>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@557971107744055297>": {
+            "id": "557971107744055297",
+            "known-name": "Puro",
+            "level": "1",
+            "mention": "<@557971107744055297>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@707194369140326400>": {
+            "id": "707194369140326400",
+            "known-name": "Danie",
+            "level": "1",
+            "mention": "<@707194369140326400>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@795284383669813280>": {
+            "id": "795284383669813280",
+            "known-name": "Stanley742",
+            "level": "1",
+            "mention": "<@795284383669813280>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@803324389662654484>": {
+            "id": "803324389662654484",
+            "known-name": "Tayles The Trainspotter",
+            "level": "1",
+            "mention": "<@803324389662654484>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@837722637291487274>": {
+            "id": "837722637291487274",
+            "known-name": "Panic_Attack",
+            "level": "1",
+            "mention": "<@837722637291487274>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@892161263247982653>": {
+            "id": "892161263247982653",
+            "known-name": "Crystal",
+            "level": "1",
+            "mention": "<@892161263247982653>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@982030857432891402>": {
+            "id": "982030857432891402",
+            "known-name": "Crystal-Beta",
+            "level": "1",
+            "mention": "<@982030857432891402>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        }
+    },
+    "mute-list": {},
+    "server-prefixes": {
+        "chatbot": ". ",
+        "moderation": "$ ",
+        "normal": "? "
+    },
+    "server-rules": {
+        "Super users": "Arch users, Gentoo users and LFS users must be respected.",
+        "alt accounts": "please dont add cringy alt accs claiming to use LFS or something, its not funny and wont get you anywhere",
+        "bad language": "swearing is permitted, however please do not overuse this kind of language (slurs are still forbidden)",
+        "operating systems": "there is a heirarchy of operating systems, windows and mac being at the bottom - LFS at the top.",
+        "rickrolls": "only arch users can rickroll"
+    },
+    "server-suggestions": {}
+}

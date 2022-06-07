@@ -1,3 +1,6 @@
+import math
+
+
 def calculate(equation):
     # starting variables
     instruction_list_unprocessed = []
@@ -11,7 +14,7 @@ def calculate(equation):
     total_length = len(equation)
 
     # moving each character of the equation to a separate variable in a list (instruction_list_unprocessed)
-#
+
     for i in range(total_length):
         instruction_list_unprocessed.append(equation[i])
 
@@ -21,7 +24,8 @@ def calculate(equation):
     for i in range(total_length):
         if str(instruction_list_unprocessed[i]).isnumeric():
             if str(instruction_list_unprocessed[i + 1]).isnumeric():
-                instruction_list_unprocessed[i + 1] = instruction_list_unprocessed[i] + instruction_list_unprocessed[i + 1]
+                instruction_list_unprocessed[i + 1] = instruction_list_unprocessed[i] + \
+                    instruction_list_unprocessed[i + 1]
                 instruction_list_unprocessed[i] = "empty"
 
     # consolidating muliti character operators
@@ -31,7 +35,8 @@ def calculate(equation):
             b = 0
         else:
             if instruction_list_unprocessed[i] == instruction_list_unprocessed[i + 1]:
-                instruction_list_unprocessed[i + 1] = instruction_list_unprocessed[i] + instruction_list_unprocessed[i + 1]
+                instruction_list_unprocessed[i + 1] = instruction_list_unprocessed[i] + \
+                    instruction_list_unprocessed[i + 1]
                 instruction_list_unprocessed[i] = "empty"
 
     # consolidating sqrt command
@@ -40,8 +45,8 @@ def calculate(equation):
         if str(instruction_list_unprocessed[i]).isalpha():
             if str(instruction_list_unprocessed[i]) == "s":
                 instruction_list.append("sqrt")
-        else: instruction_list.append(instruction_list_unprocessed[i])
-
+        else:
+            instruction_list.append(instruction_list_unprocessed[i])
 
     # inputs are processed here before calculation
 
@@ -74,7 +79,8 @@ def calculate(equation):
 
         for i in range(power_count_brackets):
             x = instruction_list.index("**", a, b)
-            instruction_list[x] = float(instruction_list[x - 1]) ** float(instruction_list[x + 1])
+            instruction_list[x] = float(
+                instruction_list[x - 1]) ** float(instruction_list[x + 1])
             instruction_list.pop(x + 1)
             instruction_list.pop(x - 1)
             operation_count = operation_count + 2
@@ -86,7 +92,8 @@ def calculate(equation):
 
         for i in range(multiplication_count_brackets):
             x = instruction_list.index("*", a, b)
-            instruction_list[x] = float(instruction_list[x - 1]) * float(instruction_list[x + 1])
+            instruction_list[x] = float(
+                instruction_list[x - 1]) * float(instruction_list[x + 1])
             instruction_list.pop(x + 1)
             instruction_list.pop(x - 1)
             operation_count = operation_count + 2
@@ -98,7 +105,8 @@ def calculate(equation):
 
         for i in range(remainder_div_count_brackets):
             x = instruction_list.index("%", a, b)
-            instruction_list[x] = float(instruction_list[x - 1]) % float(instruction_list[x + 1])
+            instruction_list[x] = float(
+                instruction_list[x - 1]) % float(instruction_list[x + 1])
             instruction_list.pop(x + 1)
             instruction_list.pop(x - 1)
             operation_count = operation_count + 2
@@ -110,7 +118,8 @@ def calculate(equation):
 
         for i in range(int_div_count_brackets):
             x = instruction_list.index("//", a, b)
-            instruction_list[x] = float(instruction_list[x - 1]) // float(instruction_list[x + 1])
+            instruction_list[x] = float(
+                instruction_list[x - 1]) // float(instruction_list[x + 1])
             instruction_list.pop(x + 1)
             instruction_list.pop(x - 1)
             operation_count = operation_count + 2
@@ -122,7 +131,8 @@ def calculate(equation):
 
         for i in range(div_count_brackets):
             x = instruction_list.index("/", a, b)
-            instruction_list[x] = float(instruction_list[x - 1]) / float(instruction_list[x + 1])
+            instruction_list[x] = float(
+                instruction_list[x - 1]) / float(instruction_list[x + 1])
             instruction_list.pop(x + 1)
             instruction_list.pop(x - 1)
             operation_count = operation_count + 2
@@ -134,7 +144,8 @@ def calculate(equation):
 
         for i in range(addition_count_brackets):
             x = instruction_list.index("+", a, b)
-            instruction_list[x] = float(instruction_list[x - 1]) + float(instruction_list[x + 1])
+            instruction_list[x] = float(
+                instruction_list[x - 1]) + float(instruction_list[x + 1])
             instruction_list.pop(x + 1)
             instruction_list.pop(x - 1)
             operation_count = operation_count + 2
@@ -146,7 +157,8 @@ def calculate(equation):
 
         for i in range(subtraction_count_brackets):
             x = instruction_list.index("-", a, b)
-            instruction_list[x] = float(instruction_list[x - 1]) - float(instruction_list[x + 1])
+            instruction_list[x] = float(
+                instruction_list[x - 1]) - float(instruction_list[x + 1])
             instruction_list.pop(x + 1)
             instruction_list.pop(x - 1)
             operation_count = operation_count + 2
@@ -181,7 +193,8 @@ def calculate(equation):
 
     for i in range(power_count):
         x = instruction_list.index("**")
-        instruction_list[x] = float(instruction_list[x - 1]) ** float(instruction_list[x + 1])
+        instruction_list[x] = float(
+            instruction_list[x - 1]) ** float(instruction_list[x + 1])
         instruction_list.pop(x + 1)
         instruction_list.pop(x - 1)
         operation_count = operation_count + 2
@@ -192,7 +205,8 @@ def calculate(equation):
 
     for i in range(multiplication_count):
         x = instruction_list.index("*")
-        instruction_list[x] = float(instruction_list[x - 1]) * float(instruction_list[x + 1])
+        instruction_list[x] = float(
+            instruction_list[x - 1]) * float(instruction_list[x + 1])
         instruction_list.pop(x + 1)
         instruction_list.pop(x - 1)
         operation_count = operation_count + 2
@@ -203,7 +217,8 @@ def calculate(equation):
 
     for i in range(remainder_div_count):
         x = instruction_list.index("%")
-        instruction_list[x] = float(instruction_list[x - 1]) % float(instruction_list[x + 1])
+        instruction_list[x] = float(
+            instruction_list[x - 1]) % float(instruction_list[x + 1])
         instruction_list.pop(x + 1)
         instruction_list.pop(x - 1)
         operation_count = operation_count + 2
@@ -214,7 +229,8 @@ def calculate(equation):
 
     for i in range(int_div_count):
         x = instruction_list.index("//")
-        instruction_list[x] = float(instruction_list[x - 1]) // float(instruction_list[x + 1])
+        instruction_list[x] = float(
+            instruction_list[x - 1]) // float(instruction_list[x + 1])
         instruction_list.pop(x + 1)
         instruction_list.pop(x - 1)
         operation_count = operation_count + 2
@@ -225,7 +241,8 @@ def calculate(equation):
 
     for i in range(division_count):
         x = instruction_list.index("/")
-        instruction_list[x] = float(instruction_list[x - 1]) / float(instruction_list[x + 1])
+        instruction_list[x] = float(
+            instruction_list[x - 1]) / float(instruction_list[x + 1])
         instruction_list.pop(x + 1)
         instruction_list.pop(x - 1)
         operation_count = operation_count + 2
@@ -236,7 +253,8 @@ def calculate(equation):
 
     for i in range(addition_count):
         x = instruction_list.index("+")
-        instruction_list[x] = float(instruction_list[x - 1]) + float(instruction_list[x + 1])
+        instruction_list[x] = float(
+            instruction_list[x - 1]) + float(instruction_list[x + 1])
         instruction_list.pop(x + 1)
         instruction_list.pop(x - 1)
         operation_count = operation_count + 2
@@ -247,12 +265,12 @@ def calculate(equation):
 
     for i in range(subtraction_count):
         x = instruction_list.index("-")
-        instruction_list[x] = float(instruction_list[x - 1]) - float(instruction_list[x + 1])
+        instruction_list[x] = float(
+            instruction_list[x - 1]) - float(instruction_list[x + 1])
         instruction_list.pop(x + 1)
         instruction_list.pop(x - 1)
         operation_count = operation_count + 2
         print(instruction_list)
-
 
     # outputs
 

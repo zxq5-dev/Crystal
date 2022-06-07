@@ -1,0 +1,188 @@
+{
+    "ban-list": {},
+    "channels": {
+        "changelogs-channel": 983068945735102514,
+        "logs-channel": 983068949770023022,
+        "rules-channel": 983068947802910720,
+        "sys-channel": 983068943537303654
+    },
+    "header": {
+        "server-id": "898647957677678612",
+        "server-name": "CrystalPvP",
+        "server-owner": "771822887421345812"
+    },
+    "members": {
+        "<@!674940470308241428>": {
+            "id": "674940470308241428",
+            "known-name": "Gem",
+            "level": "1",
+            "mention": "<@!674940470308241428>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@294882584201003009>": {
+            "id": "294882584201003009",
+            "known-name": "GiveawayBot",
+            "level": "1",
+            "mention": "<@294882584201003009>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@474051954998509571>": {
+            "id": "474051954998509571",
+            "known-name": "Suggestions",
+            "level": "1",
+            "mention": "<@474051954998509571>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@500658624109084682>": {
+            "id": "500658624109084682",
+            "known-name": "Emoji.gg",
+            "level": "1",
+            "mention": "<@500658624109084682>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@508391840525975553>": {
+            "id": "508391840525975553",
+            "known-name": "Tickets",
+            "level": "1",
+            "mention": "<@508391840525975553>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@631559279647916032>": {
+            "id": "631559279647916032",
+            "known-name": "Verification",
+            "level": "1",
+            "mention": "<@631559279647916032>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@728779373926285412>": {
+            "id": "728779373926285412",
+            "known-name": "wsar",
+            "level": "1",
+            "mention": "<@728779373926285412>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@771822887421345812>": {
+            "id": "771822887421345812",
+            "known-name": "Fantasy_PvP",
+            "level": "1",
+            "mention": "<@771822887421345812>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@892161263247982653>": {
+            "id": "892161263247982653",
+            "known-name": "Crystal",
+            "level": "1",
+            "mention": "<@892161263247982653>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@898790312716161086>": {
+            "id": "898790312716161086",
+            "known-name": "laol",
+            "level": "1",
+            "mention": "<@898790312716161086>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@922177189112328265>": {
+            "id": "922177189112328265",
+            "known-name": "Tayles YT",
+            "level": "1",
+            "mention": "<@922177189112328265>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@923311388452061185>": {
+            "id": "923311388452061185",
+            "known-name": "crystxlbot",
+            "level": "1",
+            "mention": "<@923311388452061185>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@966842073221324812>": {
+            "id": "966842073221324812",
+            "known-name": "nuke god",
+            "level": "1",
+            "mention": "<@966842073221324812>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        }
+    },
+    "mute-list": {},
+    "server-prefixes": {
+        "chatbot": ". ",
+        "moderation": "$ ",
+        "normal": "? "
+    },
+    "server-rules": {
+        "1:": "please keep bad language to a minimum",
+        "2:": "no NSFW content of any kind or links to such, this also includes malicious content or links",
+        "3:": "please keep this server friendly and relaxed",
+        "4:": "avoid controversial or political topics",
+        "5:": "absolutely no bullying or discrimination",
+        "6:": "please send messages in the correct channels; keep things relevant",
+        "7:": "please dont ping the owners / admins unless it is important, it gets annoying"
+    },
+    "server-suggestions": {}
+}

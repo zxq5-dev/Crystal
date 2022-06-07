@@ -30,23 +30,49 @@
         },
         {
             "tag": "simp",
-            "patterns": ["can we edate", "will you go out with me", "can you slide into my dms"],
+            "patterns": ["can we edate", "will you go out with me", "can you slide into my dms", "can you be my gf", "can you be my egirl"],
             "responses": ["ew no", "not in a million years", "in your dreams simp", "wth no", "haha simp"]
         },
         {
             "tag": "how are you",
-            "patterns": ["how are you", "how you doing", "hru", "whats vibin", "whats poppin", "wassup", "whats up"],
+            "patterns": ["how are you", "how you doing", "hru",  "hows it going"],
             "responses": ["im good, hbu?", "ok, how are you", "alright, wbu?", "im doing ok, how are you doing?"]
+        },
+        {
+          "tag" : "what are you doing",
+          "patterns" : ["whats up", "what are you doing", "what are you up to?", "whats poppin", "whats vibin", "wassup"],
+          "responses" : ["not too much, just moderating", "Im just chilling I guess", "Im quite busy actually, do you know how many simps i have to deal with?"]
+        },
+        {
+          "tag" : "been a while",
+          "patterns" : ["its been a while", "long time no see", "havent talked to you in ages", "havent seen you for a long time", "nice to see you", "its been a long time"],
+          "responses" : ["IKR!", "its been so long", "good to see you", "good to cya"]
+        },
+        {
+          "tag" : "im doing good",
+          "patterns" : ["im doing good", "im vibin", "im doing great"],
+          "responses" : ["glad to hear it", "thats nice to hear"]
         },
         {
             "tag": "rules",
             "patterns": ["what are the rules", "are there rules", "tell me rules"],
-            "responses": ["check out #rules", "you know the rules... and so do I XD"]
+            "responses": ["try running '$ rules'", "you know the rules... and so do I XD"]
         },
         {
             "tag": "time",
             "patterns": ["what time is it", "whats the time", "guess what time it is"],
-            "responses": ["Its Muffin time!", "muffin time?"]
+            "responses": ["Its Muffin time!", "muffin time?", "time you got a watch lol"]
+        },
+        {
+          "tag" : "who are you",
+          "patterns" : [
+            "who are you",
+            "what are you",
+            "who created you",
+            "who programmed you",
+            "who made you"
+          ],
+          "responses" : ["Hi, I'm Crystal. I was developed by FantasyPvP to moderate discord servers and be a friend to anyone who needs one. you can chat to me on any discord server that i am on or even DM me."]
         },
         {
             "tag": "you suck",
@@ -63,6 +89,28 @@
                 "you have no friends"
             ],
             "responses": ["youre so mean :(", "leave me alone", "what's wrong with you", ":broken_heart:"]
+        },
+        {
+          "tag" : "rickrolled",
+          "patterns" : [
+            "never gonna give you up never gonna let you down",
+            "never gonna let you down",
+            "never gonna run around and desert you",
+            "never gonna make you cry",
+            "never gonna say goodbye",
+            "never gonna tell a lie and hurt you"
+          ],
+          "responses": ["UGH i knew it", "why.", "that's not funny.", "wow you really think im gullible dont you?", "great, another rickroll.", "*dies of cringe*"]
+        },
+        {
+          "tag" : "never gonna",
+          "patterns" : ["ill never", "never gonna"],
+          "responses" : ["never gonna give you up", "is this gonna be a rickroll?", "if this is a rickroll..."]
+        },
+        {
+          "tag" : "give you up",
+          "patterns" : ["ill never give you up", "give up", "never gonna give you up"],
+          "responses" : ["and i'll never let you down!", "never gonna let you down lol", "are you trying to rickroll me?"]
         },
         {
             "tag": "deez",

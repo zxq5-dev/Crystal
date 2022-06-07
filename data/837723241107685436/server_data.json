@@ -1,0 +1,188 @@
+{
+    "ban-list": {},
+    "channels": {
+        "changelogs-channel": 983064060847341569,
+        "logs-channel": 983064065482039316,
+        "rules-channel": 983064063229706300,
+        "sys-channel": 983064059001831474
+    },
+    "header": {
+        "server-id": "837723241107685436",
+        "server-name": "Panic_Attack Ville/UnderSquad home",
+        "server-owner": "837722637291487274"
+    },
+    "members": {
+        "<@!803324389662654484>": {
+            "id": "803324389662654484",
+            "known-name": "Tayles The Trainspotter",
+            "level": "1",
+            "mention": "<@!803324389662654484>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@696047868171124746>": {
+            "id": "696047868171124746",
+            "known-name": "Project Mojo Tube",
+            "level": "1",
+            "mention": "<@696047868171124746>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@698848679770980392>": {
+            "id": "698848679770980392",
+            "known-name": "Book_Boss",
+            "level": "1",
+            "mention": "<@698848679770980392>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@705500349796188171>": {
+            "id": "705500349796188171",
+            "known-name": "Chaos_Star07",
+            "level": "1",
+            "mention": "<@705500349796188171>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@710078095885074493>": {
+            "id": "710078095885074493",
+            "known-name": "Tari",
+            "level": "1",
+            "mention": "<@710078095885074493>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@771822887421345812>": {
+            "id": "771822887421345812",
+            "known-name": "Fantasy_PvP",
+            "level": "1",
+            "mention": "<@771822887421345812>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@837722637291487274>": {
+            "id": "837722637291487274",
+            "known-name": "Panic_Attack",
+            "level": "1",
+            "mention": "<@837722637291487274>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@839169196507922452>": {
+            "id": "839169196507922452",
+            "known-name": "Meggy",
+            "level": "1",
+            "mention": "<@839169196507922452>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@892161263247982653>": {
+            "id": "892161263247982653",
+            "known-name": "Crystal",
+            "level": "1",
+            "mention": "<@892161263247982653>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@909481846360915990>": {
+            "id": "909481846360915990",
+            "known-name": "boi.saiyan",
+            "level": "1",
+            "mention": "<@909481846360915990>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@979510873343287338>": {
+            "id": "979510873343287338",
+            "known-name": "CrystalXD\u2122",
+            "level": "1",
+            "mention": "<@979510873343287338>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@982695644277919804>": {
+            "id": "982695644277919804",
+            "known-name": "Beluga\u2122",
+            "level": "1",
+            "mention": "<@982695644277919804>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        },
+        "<@982705868703400016>": {
+            "id": "982705868703400016",
+            "known-name": "hecker\u2122",
+            "level": "1",
+            "mention": "<@982705868703400016>",
+            "punishments": {
+                "ban-expiry": "none",
+                "ban-reason": "none",
+                "mute-expiry": "none",
+                "mute-reason": "none"
+            }
+        }
+    },
+    "mute-list": {},
+    "server-prefixes": {
+        "chatbot": ". ",
+        "moderation": "$ ",
+        "normal": "? "
+    },
+    "server-rules": {
+        "Crystal:": "is a legend",
+        "adding rules": "Please do not add rules without expressed permission from a <@&982758410569269298> or higher, it isn\u2019t funny to add memes and most likely a staff member will already be adding the rule when you contact them",
+        "bad language:": "swearing is allowed but should not be used excessively, this is in order to prevent toxicity. Slurs and Discriminatory language are still prohibited",
+        "pings": "Firstly: PLEASE DO NOT ping @everyone  it is really annoying and just upsets everyone, and dont try running a rickroll after that ping, I wont let you \ud83d\ude42         Secondly: dont ping the following roles:  [<@&893035017024978954>,  <@&982756378395443240>, <@&981290470674141225>,  <@&982758410569269298>,  <@&982770210442469386>,  <@&981278965920563230>]. if you need help from for example a mod, ping only people that are online and do not have the 'do not disturb' activity",
+        "rickrolling": "you can rickroll if you want but excessive rickrolling does get annoying so just dont spam them",
+        "roles": "if you want to apply for roles you can. in the future I will be able to automatically receive and log role applications but until then please DM an admin to apply. begging for roles is not allowed and will just result in you absolutely not getting that role. also if you do have a higher up role, don't abuse it. its not fun for anyone other than you.",
+        "warnings": "You get 5 warnings before sanctions occur. 6 warnings mean a short timeout, 7 means a longer time out, 8 means a max length time out, 9 means a kick, 10 means a short ban and 11 means a permanent ban (any bans must be passed through 1 owner)"
+    },
+    "server-suggestions": {}
+}

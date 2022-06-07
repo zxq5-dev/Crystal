@@ -1,0 +1,51 @@
+{
+    "header" : {
+        "server-name" : "example",
+        "server-id"   : "91021",
+    },
+    "members" : {
+        "<@771822887421345812>" : {
+            "known-name" : "Fantasy_PvP#9944",
+            "mention" : "<@771822887421345812>",
+            "id" : "771822887421345812",
+            "punishments" : {
+              "ban-reason" : "none",
+              "ban-expiry" : "none",
+              "mute-reason" : "none",
+              "mute-expiry" : "none"
+            },
+            "level" : "1"
+        },
+        "<@979510873343287338>" : {
+            "known-name" : "CrystalXD#9691",
+            "mention" : "<@979510873343287338>",
+            "id" : "979510873343287338",
+            "level" : "69"
+            "punishments" : {
+                "ban-reason" : "rickrolling",
+                "ban-expiry" : "2022-06-03-18-30",
+                "mute-reason" : "none",
+                "mute-expiry" : "none"
+            }
+        }
+    },
+    "ban-list" : {
+        "<@979510873343287338>" : {
+            "reason" : "rickrolling",
+            "initial-duration" : "0000-00-07-00-00",
+            "expiry-date" : "2022-06-03-18-30",
+        }
+    },
+    "mute-list" : {},
+    "server-prefixes" : {
+        "moderation" : "$ ",
+        "chatbot" : ". ",
+        "normal" : "? "
+    },
+    "server-suggestions" : {
+        "2022-06-03-10-55-00" : {
+            "mention" : "<@771822887421345812>",
+            "suggestion" : "add more features to the crystal bot"
+        }
+    }
+}

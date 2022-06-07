@@ -23,6 +23,7 @@ class Music(commands.Cog):
         except:
             pass
         try:
+            videoID = url.split("watch?v=")[1].split("&")[0]
             voice_clients[voice_client.guild.id] = voice_client
             loop = asyncio.get_event_loop()
             data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=False))
@@ -31,7 +32,9 @@ class Music(commands.Cog):
             voice_clients[message.guild.id].play(player)
 
             embed = discord.Embed(
-                title=f"Now playing: {url}", color=discord.Colour.green())
+                title=f"Now playing:", color=discord.Colour.green())
+            embed.add_field(name="url:", value=f"[{url}]", inline=False)
+            embed.set_image(url=f"https://img.youtube.com/vi/{videoID}/0.jpg")
             await message.send(embed=embed)
         except Exception as err:
             print(err)

@@ -118,6 +118,33 @@ class Moderation(commands.Cog):
         await member.send(embed=discord.Embed(title=f"you have been unmuted on server: {message.guild.name}", color=discord.Colour.green()))
         await message.send(embed=discord.Embed(title=f"unmuted: {member.name}", color=discord.Colour.green()))
 
+    @commands.command(pass_context=True)
+    async def poll(self, message, question, opt1, opt2):
+
+        print(opt1, opt2)
+        options = [opt1, opt2]
+
+        if len(options) == 2 and options[0] == "yes" and options[1] == "no":
+            reactions = ['✅', '❎']
+        else:
+            reactions = ['✅', '❎']
+
+        description = []
+        for x, option in enumerate(options):
+            description += '\n {} {}'.format(reactions[x], option)
+
+        embed = discord.Embed(title=question, color=3553599,
+                              description=''.join(description))
+
+        react_message = await message.send(embed=embed)
+
+        for reaction in reactions[:len(options)]:
+            await react_message.add_reaction(reaction)
+
+        embed.set_footer(text='Poll ID: {}'.format(react_message.id))
+
+        await react_message.edit_message(embed=embed)
+
     @commands.command()
     async def rules(self, message, *args):
         guild_data = dataIO.Guild_data(message.guild, False)

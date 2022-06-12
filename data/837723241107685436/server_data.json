@@ -1,5 +1,11 @@
 {
-    "ban-list": {},
+    "ban-list": {
+        "155149108183695360": {
+            "expiry-date": "2091-06-08-22-53-27",
+            "initial-duration": "69-00-00-00-00-00",
+            "reason": "cya rick"
+        }
+    },
     "channels": {
         "changelogs-channel": 983064060847341569,
         "logs-channel": 983064065482039316,

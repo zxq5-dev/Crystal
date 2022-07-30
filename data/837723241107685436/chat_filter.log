@@ -16,9 +16,14 @@ in message: Fuck
 [2022-06-06-17-20-44] | channel: crystal | user: Panic_Attack#1678 [<@837722637291487274>] | used banned words: ['shit'] 
 in message: . U r a shit bot
 
+<<<<<<< Updated upstream
 [2022-06-07-20-24-32] | channel: this-is-a-fridge | user: Panic_Attack#1678 [<@837722637291487274>] | used banned words: ['shit'] 
 in message: Shit
 
 [2022-06-09-21-31-19] | channel: commands-all-bots | user: Panic_Attack#1678 [<@837722637291487274>] | used banned words: ['shit'] 
 in message: $ ban <@270904126974590976> being a little shit
+=======
+[2022-06-11-16-02-50] | channel: general | user: Panic_Attack#1678 [<@837722637291487274>] | used banned words: ['fuck'] 
+in message: . fuck
+>>>>>>> Stashed changes
 

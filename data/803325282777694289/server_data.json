@@ -343,7 +343,13 @@
             }
         }
     },
-    "mute-list": {},
+    "mute-list": {
+        "837722637291487274": {
+            "expiry-date": "2023-06-11-16-00-29",
+            "initial-duration": "01-00-00-00-00-00",
+            "reason": "messing with the server\n"
+        }
+    },
     "server-prefixes": {
         "chatbot": ". ",
         "moderation": "$ ",
